@@ -25,7 +25,7 @@ As optimizer `Adam` has been used.
 As the observation space of the environment is `state_size = 37` the input size of the neural network matches this size and as `action_size = 4` the output size of the neural network matches this as well. Between input and output are two linear hidden layers, both with size `hidden_layers = [37*3, 37*3]` and `relu` activation. 
 
 # 2. Plot of Rewards
-With the above described agent the environment has been solved in 1029 episodes. The development of average rewards as well with all scores over each episode are provided below.
+With the above described agent the environment has been solved in 551 episodes. The development of average rewards as well with all scores over each episode are provided below.
 
 	Episode 100	Average Score: 0.31
 	Episode 200	Average Score: 2.32
