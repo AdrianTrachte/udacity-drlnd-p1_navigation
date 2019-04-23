@@ -8,7 +8,7 @@ The agent uses deep Q-learning (DQN) as described in [this](http://files.davidqi
 * Sample random Minibatch from Replay Buffer and compute TD-target value with target network
 * Perform gradient descent from local network Q-value to new TD-target with respect to the local network parameters
 * Do soft transition for target network towards local network
-Where these steps are repeated for each step in each episode. Note that the epsilon value for choosing the action epsilon greedy is reduced linearly over episodes, starting with `eps_start = 1.0` and ending at `eps_end = 0.01` after `eps_nEpisodes = 1000`. 
+Where these steps are repeated for each step in each episode. Note that the epsilon value for choosing the action epsilon greedy is reduced linearly over episodes, starting with `eps_start = 1.0` and ending at `eps_end = 0.01` after `eps_nEpisodes = 500`. 
 
 Further agent hyperparameters are:
 
@@ -22,7 +22,7 @@ Further agent hyperparameters are:
 As optimizer `Adam` has been used.
 
 ## Neural Network
-As the observation space of the environment is `state_size = 37` the input size of the neural network matches this size and as `action_size = 4` the output size of the neural network matches this as well. Between input and output are two linear hidden layers, both with size `hidden_layers = [37*3, 37*3]` and `relu` activation. 
+As the observation space of the environment is `state_size = 37` the input size of the neural network matches this size and as `action_size = 4` the output size of the neural network matches this as well. Between input and output are two linear hidden layers, both with size `hidden_layers = [37, 37]` and `relu` activation. 
 
 # 2. Plot of Rewards
 With the above described agent the environment has been solved in 551 episodes. The development of average rewards as well with all scores over each episode are provided below.
