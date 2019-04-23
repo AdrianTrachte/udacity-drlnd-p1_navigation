@@ -35,7 +35,7 @@ class Agent():
 
         # Q-Network
         # Create the network, define the criterion and optimizer
-        hidden_layers = [37*3, 37*3]
+        hidden_layers = [37, 37]
         self.qnetwork_local = QNetwork(state_size, action_size, hidden_layers, seed).to(device)
         self.qnetwork_target = QNetwork(state_size, action_size, hidden_layers, seed).to(device)
         self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)

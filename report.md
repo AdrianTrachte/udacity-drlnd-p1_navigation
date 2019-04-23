@@ -27,18 +27,13 @@ As the observation space of the environment is `state_size = 37` the input size 
 # 2. Plot of Rewards
 With the above described agent the environment has been solved in 1029 episodes. The development of average rewards as well with all scores over each episode are provided below.
 
-	Episode 100	Average Score: 0.09
-	Episode 200	Average Score: 0.74
-	Episode 300	Average Score: 1.51
-	Episode 400	Average Score: 2.32
-	Episode 500	Average Score: 4.02
-	Episode 600	Average Score: 5.44
-	Episode 700	Average Score: 7.64
-	Episode 800	Average Score: 9.07
-	Episode 900	Average Score: 10.13
-	Episode 1000	Average Score: 12.37
-	Episode 1018	Average Score: 13.06
-	Environment solved in 1018 episodes!	Average Score: 13.06
+	Episode 100	Average Score: 0.31
+	Episode 200	Average Score: 2.32
+	Episode 300	Average Score: 4.46
+	Episode 400	Average Score: 7.93
+	Episode 500	Average Score: 11.21
+	Episode 551	Average Score: 13.00
+	Environment solved in 551 episodes!	Average Score: 13.00
 
 ![Score over Episodes for DQN agent](./data/score_over_episodes_report.png "Score over Episodes")
 
