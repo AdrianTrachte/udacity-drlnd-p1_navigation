@@ -1,13 +1,11 @@
 [//]: # (Image References)
 
-[image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
-
 # Project 1: Navigation
 
 ### Project Details
-In this project an agent is trained to navigate (and collect bananas!) in a large, square world.  
+In this project an agent is trained to navigate (and collect yummy yellow bananas!) in a large, square world.  
 
-![Trained Agent][image1]
+![DQN Agent](./data/BananaCollector_DQN_mediumSize.gif)
 
 #### Rewards
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
@@ -24,7 +22,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Getting Started
 
-1. If you haven't already, please follow the instructions in the [DRLND GitHub repository] (https://github.com/udacity/deep-reinforcement-learning#dependencies) to set up your Python environment. These instructions can be found in `README.md` at the root of the repository. By following these instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to complete the project.
+1. Please follow the instructions in the [DRLND GitHub repository] (https://github.com/udacity/deep-reinforcement-learning#dependencies) to set up the Python environment. These instructions can be found in `README.md` at the root of the repository. By following these instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to complete the project.
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
 
@@ -38,8 +36,10 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+3. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file.
+
+**Remark:** There is also an environment.yaml in the repository as I had to slightly adjust the process described above, using `pytorch=0.4.1` instead of version 0.4.0 as requested in the installation files.
 
 ### Instructions
 
-Run the code in `Navigation.ipynb` to load the environment and train the agent. The training part can be skipped and a trained agent can be loaded in section 5.  
+Run the code in `Navigation.ipynb` to load the environment and train the agent. The training part can be skipped and a trained agent can be loaded and tested directly in section 5.  

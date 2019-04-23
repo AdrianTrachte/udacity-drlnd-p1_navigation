@@ -43,7 +43,7 @@ With the above described agent the environment has been solven in 1029 episodes.
 	Episode 1029	Average Score: 13.01
 	Environment solved in 1029 episodes!	Average Score: 13.01
 
-![Score over Episodes for DQN agent](data/score_over_rewards.png)
+![Score over Episodes for DQN agent](./data/score_over_episodes.png "Score over Episodes")
 
 # 3. Ideas for Future Work
 
